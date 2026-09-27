@@ -3,94 +3,45 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f5ef">
-  <meta name="description" content="ワンビーコミュニティは、デザインを学び、つくり、語り合う人のためのデザインコミュニティです。">
-  <title>ワンビーコミュニティ｜デザインを、共に育てる。</title>
+  <meta name="theme-color" content="#f7f3eb">
+  <meta name="description" content="ワンビーコミュニティは、デザインを学び、試し、仲間と分かち合うためのデモサイトです。">
+  <title>ワンビーコミュニティ｜デザインを、ひとりにしない。</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">本文へ移動</a>
   <header class="site-header" id="top">
-    <div class="shell header-inner">
-      <a class="brand" href="#top" aria-label="ワンビーコミュニティ トップへ">
-        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-        <span class="brand-type"><strong>onebe</strong><small>ワンビーコミュニティ</small></span>
-      </a>
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="ワンビーコミュニティ トップへ"><span class="brand-name">ワンビーコミュニティ</span><small>つながり、学び、つくる明日へ</small></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="メニューを開く"><span></span><span></span></button>
-      <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション">
-        <a href="#about">コンセプト</a>
-        <a href="#activities">活動内容</a>
-        <a href="#founder">Founder Story</a>
-        <a href="#faq">よくある質問</a>
-        <a class="nav-cta" href="#join">参加について <span aria-hidden="true">↗</span></a>
-      </nav>
+      <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション"><a href="#concept">コンセプト</a><a href="#activities">活動内容</a><a href="#founder">Founder Story</a><a href="#join">参加について</a><button class="nav-join" type="button" data-open-demo>参加案内を見る <span aria-hidden="true">›</span></button></nav>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="shell hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-line"></span> DESIGN COMMUNITY</p>
-          <h1 id="hero-title">デザインを、<br><span>共に育てる。</span></h1>
-          <p class="hero-lead">ひとりのアイデアを、みんなの発見に。</p>
-          <p class="hero-description">ワンビーコミュニティは、デザインに向き合う人が、学びを共有し、試作を見せ合い、次の一歩を見つける場所です。</p>
-          <div class="hero-actions"><a class="button button-primary" href="#activities">活動内容を見る <span aria-hidden="true">↗</span></a><a class="text-link" href="#about">私たちについて <span aria-hidden="true">↓</span></a></div>
-          <p class="hero-caption">DESIGN  /  LEARN  /  CONNECT</p>
-        </div>
-        <div class="hero-media">
-          <img src="assets/design-team.png" alt="デザイン資料を囲んで意見を交わす、架空のコミュニティ参加者たち" width="1672" height="939" fetchpriority="high">
-          <div class="image-corner" aria-hidden="true"><span>01</span><span>CREATE<br>TOGETHER</span></div>
-        </div>
-      </div>
-      <div class="hero-bottom shell"><span>つくる。話す。磨き合う。</span><span>SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span></div>
-    </section>
-
-    <section class="intro section" id="about" aria-labelledby="about-title">
-      <div class="shell intro-grid">
-        <div class="section-label"><span>01 / ABOUT</span><span class="label-rule"></span></div>
-        <div><h2 id="about-title">いいデザインは、<br>対話の中で強くなる。</h2><p>つくって終わりにせず、誰かに見せ、問いを交わし、もう一度つくる。ワンビーコミュニティは、そんな過程そのものを大切にするデザインコミュニティです。</p><p>経験や肩書きよりも、好奇心と実践を。異なる視点に出会うことで、ひとりでは見えなかった可能性を見つけていきます。</p></div>
-        <div class="intro-aside"><span class="aside-symbol" aria-hidden="true">✳</span><p>Different eyes.<br>Better ideas.</p></div>
+      <div class="hero-photo"><img src="assets/hero-designer.png" alt="架空のデザイナーがスタジオで制作しているデモ用イメージ" width="1536" height="1024" fetchpriority="high"></div>
+      <div class="wrap hero-inner">
+        <div class="hero-copy"><p class="hero-kicker">デザインに向き合う、すべての人へ</p><h1 id="hero-title">デザインを、<br><em>ひとりにしない。</em></h1><p class="hero-lead">つくる人が学び合う、<br>デザインコミュニティ。</p><p class="hero-description">ひとりの視点だけでは見つからない答えがある。作品を見せ合い、問いを交わし、明日の制作に持ち帰るための場所です。</p><button class="join-button" type="button" data-open-demo><span class="join-icon" aria-hidden="true">W</span><span>参加案内を見る</span><span class="join-arrow" aria-hidden="true">›</span></button><p class="hero-facts">デザインレビュー <span>｜</span> 実践動画 <span>｜</span> つくる人の交流</p></div>
+        <div class="hero-foot"><div class="hero-motif" aria-hidden="true"><i></i><i></i><i></i><i></i></div><span>DESIGN · LEARN · CONNECT</span></div>
       </div>
     </section>
 
-    <section class="activities section" id="activities" aria-labelledby="activities-title">
-      <div class="shell">
-        <div class="section-label"><span>02 / ACTIVITIES</span><span class="label-rule"></span></div>
-        <div class="section-heading"><div><h2 id="activities-title">学ぶだけで終わらない。<br>手を動かし、持ち帰る。</h2><p>自分のペースで関わりながら、日々の制作に生かせる視点を増やしていきます。</p></div><span class="heading-index">WHAT WE DO ↘</span></div>
-        <div class="activity-list">
-          <article class="activity"><span class="activity-number">01</span><div class="activity-content"><span class="activity-en">DESIGN REVIEW</span><h3>デザインレビュー</h3><p>制作途中のアイデアを持ち寄り、意図や伝わり方を一緒に考えます。完成前だからこそ話せることを大切に。</p></div><span class="activity-arrow" aria-hidden="true">↗</span></article>
-          <article class="activity"><span class="activity-number">02</span><div class="activity-content"><span class="activity-en">LEARNING SESSIONS</span><h3>学びのセッション</h3><p>デザインの考え方や実務の工夫を共有。知識を覚えるだけでなく、自分の仕事にどう使うかまで考えます。</p></div><span class="activity-arrow" aria-hidden="true">↗</span></article>
-          <article class="activity"><span class="activity-number">03</span><div class="activity-content"><span class="activity-en">OPEN CONVERSATION</span><h3>つくる人の対話</h3><p>悩みも発見も、肩の力を抜いて話せる時間。分野の違うメンバーとの会話から、新しい選択肢が生まれます。</p></div><span class="activity-arrow" aria-hidden="true">↗</span></article>
-        </div>
-      </div>
-    </section>
+    <section class="concept" id="concept" aria-labelledby="concept-title"><div class="wrap"><div class="section-cap"><span class="cap-line"></span><span id="concept-title">デザインが広がる、3つのきっかけ。</span><span class="cap-line"></span></div><div class="concept-grid"><div class="concept-item"><span class="concept-number">01</span><h2>学ぶ</h2><p>違う視点にふれ、考え方を増やす。</p></div><div class="concept-item"><span class="concept-number">02</span><h2>試す</h2><p>手を動かして、学びを自分のものに。</p></div><div class="concept-item"><span class="concept-number">03</span><h2>つながる</h2><p>つくる人同士で、可能性をひらく。</p></div></div><p class="concept-note">※ このサイトはデモです。活動内容・参加条件は正式公開時にご案内します。</p></div></section>
 
-    <section class="image-statement" aria-label="コミュニティの風景">
-      <img src="assets/design-review.png" alt="架空のデザイナーたちが制作物を見ながら意見交換をする様子" width="1536" height="1024" loading="lazy">
-      <div class="image-statement-text"><span>ONEBE COMMUNITY</span><p>見せ合うことから、<br>次のアイデアが始まる。</p></div>
-    </section>
+    <section class="activities" id="activities" aria-labelledby="activities-title"><div class="wrap"><div class="section-heading"><p class="eyebrow">WHAT YOU GET</p><h2 id="activities-title">現場から生まれる、続けられる学び。</h2><p>気になるところから、自分のペースで。見て、話して、試せる場をつくります。</p></div><div class="activity-grid"><article class="activity-card"><img src="assets/study-online.png" alt="架空の参加者によるオンラインデザイン勉強会のデモ用イメージ" width="1536" height="1024" loading="lazy"><div class="activity-body"><span class="activity-index">01 / STUDY</span><h3>オンライン勉強会</h3><p>デザインの考え方を、実例や対話を通して深める時間。聞くだけの参加から始められます。</p></div></article><article class="activity-card"><img src="assets/practice-video.png" alt="架空のデザイナーの制作風景を撮影しているデモ用イメージ" width="1536" height="1024" loading="lazy"><div class="activity-body"><span class="activity-index">02 / PRACTICE</span><h3>実践動画</h3><p>制作の過程や判断の理由を動画で共有。自分の時間に合わせて繰り返し学べます。</p></div></article><article class="activity-card"><img src="assets/design-review.png" alt="架空のデザイナーたちが制作物を囲んで意見交換するデモ用イメージ" width="1536" height="1024" loading="lazy"><div class="activity-body"><span class="activity-index">03 / CONNECT</span><h3>つくる人同士の交流</h3><p>分野や経験の違う仲間と話せる場所。うまくいったことも、迷ったことも持ち寄れます。</p></div></article></div></div></section>
 
-    <section class="founder section" id="founder" aria-labelledby="founder-title">
-      <div class="shell founder-grid">
-        <div class="founder-media"><img src="assets/founder-image.png" alt="デザイン資料に向き合う人物を描いたデモ用イメージ写真" width="1456" height="1092" loading="lazy"><span>※ デモ用の生成イメージ。マスヤ本人の写真ではありません。</span></div>
-        <div class="founder-copy"><div class="section-label"><span>03 / FOUNDER STORY</span><span class="label-rule"></span></div><h2 id="founder-title">「ひとりでつくる」を、<br>少し変えたかった。</h2><p>はじめまして、マスヤです。</p><p>デザインには、正解をすぐに決められない時間があります。そんなとき、自分の考えを言葉にし、違う視点を受け取れる場所があれば、次の一歩が見つかるかもしれません。</p><p>ワンビーコミュニティでは、うまくできた結果だけでなく、考えた過程や迷いも持ち寄れる場をつくりたいと思っています。つくる人同士が、お互いの可能性を広げていける場所へ。</p><div class="founder-sign"><strong>マスヤ</strong><span>ワンビーコミュニティ 主宰</span></div></div>
-      </div>
-    </section>
+    <section class="founder" id="founder" aria-labelledby="founder-title"><div class="wrap founder-grid"><div class="founder-photo"><img src="assets/founder-portrait.png" alt="マスヤ本人とは異なる架空の人物を使ったデモ用イメージ" width="1024" height="1536" loading="lazy"><span>デモ用の生成イメージ。マスヤ本人の写真ではありません。</span></div><div class="founder-copy"><p class="eyebrow">FOUNDER STORY</p><h2 id="founder-title">「ひとりでつくる」を、<br>少し変えたかった。</h2><p>はじめまして、マスヤです。</p><p>デザインには、すぐに答えの出ない時間があります。そんなとき、考えを言葉にし、違う視点を受け取れる場所があれば、次の一歩が見つかるかもしれません。</p><p>結果だけでなく、考えた過程や迷いも持ち寄れる。ワンビーコミュニティを、つくる人同士が互いの可能性を広げられる場所にしていきたいと思っています。</p><div class="founder-sign"><strong>マスヤ</strong><span>ワンビーコミュニティ 主宰</span></div><p class="founder-note">※ Founder Storyはデモ用文章です。経歴や実績は記載していません。</p></div></div></section>
 
-    <section class="join section" id="join" aria-labelledby="join-title">
-      <div class="shell join-grid"><div><div class="section-label"><span>04 / JOIN US</span><span class="label-rule"></span></div><h2 id="join-title">あなたの視点が、<br>誰かのヒントになる。</h2><p>デザインを学びたい人も、実務で試行錯誤している人も。まずは、ここでどんな対話が生まれるかを想像してみてください。</p><button class="button button-light" type="button" data-open-demo>参加案内を見る <span aria-hidden="true">↗</span></button></div><div class="join-graphic" aria-hidden="true"><div class="circle circle-a"></div><div class="circle circle-b"></div><div class="circle circle-c"></div><span>Make<br>it<br>together.</span></div></div>
-    </section>
-
-    <section class="faq section" id="faq" aria-labelledby="faq-title"><div class="shell faq-grid"><div><div class="section-label"><span>05 / FAQ</span><span class="label-rule"></span></div><h2 id="faq-title">よくある質問</h2><p>コミュニティの詳細は、公開に向けて順次ご案内します。</p></div><div class="faq-items"><details><summary>デザイン初心者でも参加できますか？</summary><p>経験年数を問わず、デザインに関心があり、学びや対話を楽しみたい方を想定しています。</p></details><details><summary>どのような活動がありますか？</summary><p>デザインレビュー、学びのセッション、参加者同士の対話を中心に考えています。正式な内容は公開時にご案内します。</p></details><details><summary>参加費や開催日程は決まっていますか？</summary><p>このページはデモサイトです。参加費、開催日程、申込方法は未設定です。</p></details></div></div></section>
+    <section class="closing" id="join" aria-labelledby="join-title"><img class="closing-photo" src="assets/design-team.png" alt="架空のデザイナーが集まって制作するデモ用イメージ" width="1672" height="939" loading="lazy"><div class="closing-overlay"><div class="wrap"><h2 id="join-title">デザインの明日を、一緒につくりませんか。</h2><button class="join-button" type="button" data-open-demo><span class="join-icon" aria-hidden="true">W</span><span>参加案内を見る</span><span class="join-arrow" aria-hidden="true">›</span></button><p>参加受付・料金・開催日程は正式公開時にご案内します。</p></div></div></section>
   </main>
 
-  <footer class="site-footer"><div class="shell footer-main"><a class="brand brand-footer" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="brand-type"><strong>onebe</strong><small>ワンビーコミュニティ</small></span></a><p>デザインを、共に育てる。</p><a href="#top">ページの先頭へ ↑</a></div><div class="shell footer-bottom"><span>© 2026 ONEBE COMMUNITY</span><span>このサイトはデモです。人物写真はすべて生成イメージで、活動内容・参加受付は仮の設定です。</span></div></footer>
+  <footer class="site-footer"><div class="wrap footer-inner"><span>ワンビーコミュニティ</span><span>© 2026 ONEBE COMMUNITY</span><span>人物写真はすべて生成イメージです。このサイトはデモです。</span></div></footer>
 
-  <dialog class="demo-dialog" id="demo-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" data-close-demo aria-label="閉じる">×</button><span class="dialog-eyebrow">DEMO SITE</span><h2 id="dialog-title">参加案内は準備中です</h2><p>このページはワンビーコミュニティのデモサイトです。実際の参加受付やお問い合わせ送信は行っていません。</p><button class="button button-primary" type="button" data-close-demo>閉じる</button></dialog>
+  <dialog class="demo-dialog" id="demo-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" data-close-demo aria-label="閉じる">×</button><span class="dialog-eyebrow">DEMO SITE</span><h2 id="dialog-title">参加案内は準備中です</h2><p>このページはワンビーコミュニティのデモサイトです。実際の参加受付やお問い合わせ送信は行っていません。</p><button class="dialog-action" type="button" data-close-demo>閉じる</button></dialog>
 </body>
 </html>
