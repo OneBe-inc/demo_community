@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="site.css">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -17,31 +17,131 @@
   <header class="site-header" id="top">
     <div class="wrap header-inner">
       <a class="brand" href="#top" aria-label="ワンビーコミュニティ トップへ"><span class="brand-name">ワンビーコミュニティ</span><small>つながり、学び、つくる明日へ</small></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="メニューを開く"><span></span><span></span></button>
-      <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション"><a href="#concept">コンセプト</a><a href="#activities">活動内容</a><a href="#founder">Founder Story</a><a href="#join">参加について</a><button class="nav-join" type="button" data-open-demo>参加案内を見る <span aria-hidden="true">›</span></button></nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="メニューを開く"><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション"><a href="#concept">コンセプト</a><a href="#activities">活動内容</a><a href="#founder">Founder Story</a><a href="#join">参加について</a>
+      <button class="nav-join" type="button" data-open-demo>参加案内を見る <span aria-hidden="true">›</span>
+      </button>
+      </nav>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-photo"><img src="assets/hero-designer.png" alt="架空のデザイナーがスタジオで制作しているデモ用イメージ" width="1536" height="1024" fetchpriority="high"></div>
+      <div class="hero-photo">
+      <img src="assets/hero-designer-v2-1280.webp" srcset="assets/hero-designer-v2-640.webp 640w, assets/hero-designer-v2-1280.webp 1280w" sizes="(max-width: 740px) 100vw, 75vw" alt="架空のデザイナーがスタジオで制作しているデモ用イメージ" width="1536" height="1024" fetchpriority="high">
+      </div>
       <div class="wrap hero-inner">
-        <div class="hero-copy"><p class="hero-kicker">デザインに向き合う、すべての人へ</p><h1 id="hero-title">デザインを、<br><em>ひとりにしない。</em></h1><p class="hero-lead">つくる人が学び合う、<br>デザインコミュニティ。</p><p class="hero-description">ひとりの視点だけでは見つからない答えがある。作品を見せ合い、問いを交わし、明日の制作に持ち帰るための場所です。</p><button class="join-button" type="button" data-open-demo><span class="join-icon" aria-hidden="true">W</span><span>参加案内を見る</span><span class="join-arrow" aria-hidden="true">›</span></button><p class="hero-facts">デザインレビュー <span>｜</span> 実践動画 <span>｜</span> つくる人の交流</p></div>
-        <div class="hero-foot"><div class="hero-motif" aria-hidden="true"><i></i><i></i><i></i><i></i></div><span>DESIGN · LEARN · CONNECT</span></div>
+        <div class="hero-copy">
+      <h1 id="hero-title">デザインを、<br><em>ひとりにしない。</em>
+      </h1>
+      <p class="hero-lead">つくる人が学び合う、<br>デザインコミュニティ。</p>
+      <p class="hero-description">作品を見せ合い、考えを交わす。<br>制作の悩みも、小さな発見も、<br>ひとりで抱えず、仲間と分かち合う。</p>
+      <button class="join-button" type="button" data-open-demo><span>参加案内を見る</span><span class="join-arrow" aria-hidden="true">›</span>
+      </button>
+      <p class="hero-facts">デザインレビュー <span>｜</span> 実践動画 <span>｜</span> つくる人の交流</p>
+      </div>
+        <p class="hero-caption"><span>つくる毎日に、</span><span>話せる仲間を。</span>
+      </p>
       </div>
     </section>
 
-    <section class="concept" id="concept" aria-labelledby="concept-title"><div class="wrap"><div class="section-cap"><span class="cap-line"></span><span id="concept-title">デザインが広がる、3つのきっかけ。</span><span class="cap-line"></span></div><div class="concept-grid"><div class="concept-item"><span class="concept-number">01</span><h2>学ぶ</h2><p>違う視点にふれ、考え方を増やす。</p></div><div class="concept-item"><span class="concept-number">02</span><h2>試す</h2><p>手を動かして、学びを自分のものに。</p></div><div class="concept-item"><span class="concept-number">03</span><h2>つながる</h2><p>つくる人同士で、可能性をひらく。</p></div></div><p class="concept-note">※ このサイトはデモです。活動内容・参加条件は正式公開時にご案内します。</p></div></section>
+    <section class="concept" id="concept" aria-labelledby="concept-title">
+      <div class="wrap">
+      <div class="section-cap"><span class="cap-line"></span><span id="concept-title">制作につながる、3つの学び。</span><span class="cap-line"></span>
+      </div>
+      <div class="concept-grid">
+      <div class="concept-item">
+      <p class="concept-label">考え方を深める</p>
+      <h2>勉強会</h2>
+      </div>
+      <div class="concept-item">
+      <p class="concept-label">制作の過程を知る</p>
+      <h2>実践動画</h2>
+      </div>
+      <div class="concept-item">
+      <p class="concept-label">仲間と話せる</p>
+      <h2>交流の場</h2>
+      </div>
+      </div>
+      <p class="concept-note">※ このサイトはデモです。活動内容・参加条件は正式公開時にご案内します。</p>
+      </div>
+      </section>
 
-    <section class="activities" id="activities" aria-labelledby="activities-title"><div class="wrap"><div class="section-heading"><p class="eyebrow">WHAT YOU GET</p><h2 id="activities-title">現場から生まれる、続けられる学び。</h2><p>気になるところから、自分のペースで。見て、話して、試せる場をつくります。</p></div><div class="activity-grid"><article class="activity-card"><img src="assets/study-online.png" alt="架空の参加者によるオンラインデザイン勉強会のデモ用イメージ" width="1536" height="1024" loading="lazy"><div class="activity-body"><span class="activity-index">01 / STUDY</span><h3>オンライン勉強会</h3><p>デザインの考え方を、実例や対話を通して深める時間。聞くだけの参加から始められます。</p></div></article><article class="activity-card"><img src="assets/practice-video.png" alt="架空のデザイナーの制作風景を撮影しているデモ用イメージ" width="1536" height="1024" loading="lazy"><div class="activity-body"><span class="activity-index">02 / PRACTICE</span><h3>実践動画</h3><p>制作の過程や判断の理由を動画で共有。自分の時間に合わせて繰り返し学べます。</p></div></article><article class="activity-card"><img src="assets/design-review.png" alt="架空のデザイナーたちが制作物を囲んで意見交換するデモ用イメージ" width="1536" height="1024" loading="lazy"><div class="activity-body"><span class="activity-index">03 / CONNECT</span><h3>つくる人同士の交流</h3><p>分野や経験の違う仲間と話せる場所。うまくいったことも、迷ったことも持ち寄れます。</p></div></article></div></div></section>
+    <section class="activities" id="activities" aria-labelledby="activities-title">
+      <div class="wrap">
+      <div class="section-heading">
+      <h2 id="activities-title"><span>現場から生まれる、</span><span>続けられる学び。</span>
+      </h2>
+      <p>見て、話して、試してみる。<br class="mobile-break">明日の制作に持ち帰れる学びを。</p>
+      </div>
+      <div class="activity-grid">
+      <article class="activity-card">
+      <img src="assets/study-online-1280.webp" srcset="assets/study-online-640.webp 640w, assets/study-online-1280.webp 1280w" sizes="(max-width: 740px) 32vw, 30vw" alt="架空の参加者によるオンラインデザイン勉強会のデモ用イメージ" width="1536" height="1024" loading="lazy">
+      <div class="activity-body">
+      <h3>オンライン勉強会</h3>
+      <p>デザインの考え方を、実例や対話を通して深める時間。聞くだけの参加から始められます。</p>
+      </div>
+      </article>
+      <article class="activity-card">
+      <img src="assets/practice-video-1280.webp" srcset="assets/practice-video-640.webp 640w, assets/practice-video-1280.webp 1280w" sizes="(max-width: 740px) 32vw, 30vw" alt="架空のデザイナーの制作風景を撮影しているデモ用イメージ" width="1536" height="1024" loading="lazy">
+      <div class="activity-body">
+      <h3>実践動画</h3>
+      <p>制作の過程や判断の理由を動画で共有。自分の時間に合わせて繰り返し学べます。</p>
+      </div>
+      </article>
+      <article class="activity-card">
+      <img src="assets/design-review-1280.webp" srcset="assets/design-review-640.webp 640w, assets/design-review-1280.webp 1280w" sizes="(max-width: 740px) 32vw, 30vw" alt="架空のデザイナーたちが制作物を囲んで意見交換するデモ用イメージ" width="1536" height="1024" loading="lazy">
+      <div class="activity-body">
+      <h3>デザイナー同士の交流</h3>
+      <p>分野や経験の違う仲間と話せる場所。うまくいったことも、迷ったことも持ち寄れます。</p>
+      </div>
+      </article>
+      </div>
+      </div>
+      </section>
 
-    <section class="founder" id="founder" aria-labelledby="founder-title"><div class="wrap founder-grid"><div class="founder-photo"><img src="assets/founder-portrait.png" alt="マスヤ本人とは異なる架空の人物を使ったデモ用イメージ" width="1024" height="1536" loading="lazy"><span>デモ用の生成イメージ。マスヤ本人の写真ではありません。</span></div><div class="founder-copy"><p class="eyebrow">FOUNDER STORY</p><h2 id="founder-title">「ひとりでつくる」を、<br>少し変えたかった。</h2><p>はじめまして、マスヤです。</p><p>デザインには、すぐに答えの出ない時間があります。そんなとき、考えを言葉にし、違う視点を受け取れる場所があれば、次の一歩が見つかるかもしれません。</p><p>結果だけでなく、考えた過程や迷いも持ち寄れる。ワンビーコミュニティを、つくる人同士が互いの可能性を広げられる場所にしていきたいと思っています。</p><div class="founder-sign"><strong>マスヤ</strong><span>ワンビーコミュニティ 主宰</span></div><p class="founder-note">※ Founder Storyはデモ用文章です。経歴や実績は記載していません。</p></div></div></section>
+    <section class="founder" id="founder" aria-labelledby="founder-title">
+      <div class="wrap founder-grid">
+      <div class="founder-photo">
+      <img src="assets/founder-portrait-1280.webp" srcset="assets/founder-portrait-640.webp 640w, assets/founder-portrait-1280.webp 1024w" sizes="(max-width: 740px) 90vw, 50vw" alt="マスヤ本人とは異なる架空の人物を使ったデモ用イメージ" width="1024" height="1536" loading="lazy"><span>デモ用の生成イメージ。マスヤ本人の写真ではありません。</span>
+      </div>
+      <div class="founder-copy">
+      <p class="eyebrow">FOUNDER STORY</p>
+      <h2 id="founder-title">「ひとりでつくる」を、<br>少し変えたかった。</h2>
+      <p>はじめまして、マスヤです。</p>
+      <p>デザインには、すぐに答えの出ない時間があります。そんなとき、考えを言葉にし、違う視点を受け取れる場所があれば、次の一歩が見つかるかもしれません。</p>
+      <p>結果だけでなく、考えた過程や迷いも持ち寄れる。ワンビーコミュニティを、つくる人同士が互いの可能性を広げられる場所にしていきたいと思っています。</p>
+      <div class="founder-sign"><strong>マスヤ</strong><span>ワンビーコミュニティ 主宰</span>
+      </div>
+      <p class="founder-note">※ Founder Storyはデモ用文章です。経歴や実績は記載していません。</p>
+      </div>
+      </div>
+      </section>
 
-    <section class="closing" id="join" aria-labelledby="join-title"><img class="closing-photo" src="assets/design-team.png" alt="架空のデザイナーが集まって制作するデモ用イメージ" width="1672" height="939" loading="lazy"><div class="closing-overlay"><div class="wrap"><h2 id="join-title">デザインの明日を、一緒につくりませんか。</h2><button class="join-button" type="button" data-open-demo><span class="join-icon" aria-hidden="true">W</span><span>参加案内を見る</span><span class="join-arrow" aria-hidden="true">›</span></button><p>参加受付・料金・開催日程は正式公開時にご案内します。</p></div></div></section>
+    <section class="closing" id="join" aria-labelledby="join-title">
+      <img class="closing-photo" src="assets/design-team-1280.webp" srcset="assets/design-team-640.webp 640w, assets/design-team-1280.webp 1280w" sizes="100vw" alt="架空のデザイナーが集まって制作するデモ用イメージ" width="1672" height="939" loading="lazy">
+      <div class="closing-overlay">
+      <div class="wrap">
+      <h2 id="join-title">デザインの明日を、一緒につくりませんか。</h2>
+      <button class="join-button" type="button" data-open-demo><span>参加案内を見る</span><span class="join-arrow" aria-hidden="true">›</span>
+      </button>
+      <p>参加受付・料金・開催日程は正式公開時にご案内します。</p>
+      </div>
+      </div>
+      </section>
   </main>
 
-  <footer class="site-footer"><div class="wrap footer-inner"><span>ワンビーコミュニティ</span><span>© 2026 ONEBE COMMUNITY</span><span>人物写真はすべて生成イメージです。このサイトはデモです。</span></div></footer>
+  <footer class="site-footer">
+      <div class="wrap footer-inner"><span>ワンビーコミュニティ</span><span>© 2026 ONEBE COMMUNITY</span><span>人物写真はすべて生成イメージです。このサイトはデモです。</span>
+      </div>
+      </footer>
 
-  <dialog class="demo-dialog" id="demo-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" data-close-demo aria-label="閉じる">×</button><span class="dialog-eyebrow">DEMO SITE</span><h2 id="dialog-title">参加案内は準備中です</h2><p>このページはワンビーコミュニティのデモサイトです。実際の参加受付やお問い合わせ送信は行っていません。</p><button class="dialog-action" type="button" data-close-demo>閉じる</button></dialog>
+  <dialog class="demo-dialog" id="demo-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" data-close-demo aria-label="閉じる">×</button><span class="dialog-eyebrow">DEMO SITE</span>
+      <h2 id="dialog-title">参加案内は準備中です</h2>
+      <p>このページはワンビーコミュニティのデモサイトです。実際の参加受付やお問い合わせ送信は行っていません。</p>
+      <button class="dialog-action" type="button" data-close-demo>閉じる</button>
+      </dialog>
 </body>
 </html>

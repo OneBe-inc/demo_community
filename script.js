@@ -16,6 +16,8 @@ if (menuButton && navigation) {
   });
 
   navigation.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+  navigation.querySelectorAll('[data-open-demo]').forEach((button) => button.addEventListener('click', closeMenu));
+  window.matchMedia('(max-width: 740px)').addEventListener('change', closeMenu);
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') closeMenu();
   });
@@ -29,5 +31,9 @@ document.querySelectorAll('[data-close-demo]').forEach((button) => {
   button.addEventListener('click', () => demoDialog?.close());
 });
 demoDialog?.addEventListener('click', (event) => {
-  if (event.target === demoDialog) demoDialog.close();
+  if (event.target !== demoDialog) return;
+  const bounds = demoDialog.getBoundingClientRect();
+  const outside = event.clientX < bounds.left || event.clientX > bounds.right
+    || event.clientY < bounds.top || event.clientY > bounds.bottom;
+  if (outside) demoDialog.close();
 });
